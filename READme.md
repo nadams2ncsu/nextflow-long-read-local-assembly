@@ -58,14 +58,6 @@ cp config/samples.tsv samples.tsv
 | `data_type` | Sequencing platform (`ONT` or `PB`) |
 | `flanks` | Flanking sequence length(s), in kb, added to the target for local assembly |
 
-Example:
-
-```text
-sample	consortium	bam	gene	coordinates	data_type	flanks
-HG00513	LRSC	/path/to/HG00513.bam	FCGR2_3	chr1:161505457-161678654	ONT	50,100,400
-HG00097	HPRC	/path/to/HG00097.bam	FCGR2_3	chr1:161505457-161678654	PB	200,400,500
-```
-
 Supported default flank sizes are `50, 100, 200, 300, 400, 500, 1000` kb, where `1000` represents 1 Mb. Multiple flank sizes can be provided as a comma-separated list (e.g., `50,100,200,400`), or `all` can be specified to run all supported flank sizes.
 
 Flanking sequence is used for read extraction and local assembly. Assembly contiguity is evaluated only across the original user-supplied target coordinates.
