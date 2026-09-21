@@ -123,7 +123,7 @@ Nextflow execution reports, including the trace, timeline, report, and DAG, are 
 
 **`summarize_alignment.py`** evaluates phased assemblies across the user-supplied target coordinates and reports assembly contiguity, coverage, contig information, and alignment-based variation.
 
-**`classify_haplotype.py`** optionally compares observed structural events with known haplotype definitions supplied in a YAML configuration, allowing locus-specific haplotypes to be defined without hard-coding them into the classification program.
+**`classify_haplotypes.py`** optionally compares observed structural events with known haplotype definitions supplied in a YAML configuration. This is customizable for each gene/region in any system for known structural haplotypes.
 
 ## Notes
 
