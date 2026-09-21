@@ -77,12 +77,18 @@ chmod +x submit_local_asm_workflow.sh run_nextflow.sh
 Run local assembly and alignment analysis:
 
 ```bash
-./submit_local_asm_workflow.sh  samples.tsv /path/to/reference/genome.fasta
+./submit_local_asm_workflow.sh  config/samples.tsv /path/to/reference/genome.fasta
 ```
 
 The submission script launches the Nextflow controller as a SLURM job. Nextflow then manages individual workflow processes through SLURM using the resources defined in `nextflow.config`.
 
-The haplotype configuration is optional. Without it, the workflow performs local assembly and alignment-based characterization without structural haplotype classification.
+Run local assembly with haplotyping analysis:
+
+```bash
+./submit_local_asm_workflow.sh  config/samples.tsv /path/to/reference/genome.fasta config/haplotypes/haplotypes.yaml
+```
+
+The haplotype configuration is optional and provides a first-pass structural haplotype classification based on known structural-event coordinates relative to the reference genome. These classifications should be considered preliminary and may require additional validation. Without a haplotype configuration, the workflow performs local assembly and alignment-based characterization without structural haplotype classification.
 
 ## Inputs
 
