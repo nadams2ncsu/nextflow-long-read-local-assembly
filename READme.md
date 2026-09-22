@@ -25,12 +25,9 @@ PacBio HiFi (`PB`) and Oxford Nanopore (`ONT`) WGS data are supported.
 
 ## Requirements
 
-- Nextflow
-- Singularity/Apptainer
-- SLURM
-- Coordinate-sorted and indexed long-read WGS BAM files
+The workflow requires **Nextflow** and **Singularity/Apptainer** and is designed for execution on an HPC system using **SLURM**.
 
-All analysis dependencies are provided in `long_read_local_asm.sif`.
+Input long-read WGS BAM files must be coordinate sorted and indexed. All other analysis dependencies are provided in `long_read_local_asm.sif`.
 
 ## Quick Start
 
