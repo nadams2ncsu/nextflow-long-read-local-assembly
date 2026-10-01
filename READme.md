@@ -1,8 +1,8 @@
 # Nextflow Long-Read Local Assembly
 
-A Nextflow DSL2 workflow for localized, haplotype-resolved assembly of long-read whole-genome sequencing (WGS) data on SLURM-based HPC systems.
+A Nextflow DSL2 workflow for local, haplotype-resolved assembly of long-read whole-genome sequencing (WGS) data on SLURM-based HPC systems.
 
-The workflow performs regional read extraction, phased assembly, reference-based assembly evaluation, optional structural haplotyping, sequence reconstruction, cross-dataset comparison, and automated reporting. PacBio HiFi (`PB`) and Oxford Nanopore (`ONT`) WGS data are supported.
+The workflow performs regional read extraction, phased assembly, reference-based assembly evaluation, *optional* structural haplotyping, sequence reconstruction, cross-dataset comparison, and automated reporting. PacBio HiFi (`PB`) and Oxford Nanopore (`ONT`) WGS data are supported.
 
 ---
 
