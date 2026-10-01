@@ -274,3 +274,10 @@ Final sequence reconstruction requires both phased assemblies for a `sample + gr
 If either haplotype fails this requirement, neither haplotype from that assembly run is retained as a final reconstructed assembly.
 
 Samples represented by only one group can still produce final reconstructed sequences. Multiple groups are required only for across-group comparison.
+
+---
+
+## Troubleshooting
+
+Common workflow execution and configuration issues are documented in
+[`docs/troubleshooting.md`](docs/troubleshooting.md).
