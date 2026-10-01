@@ -15,8 +15,6 @@ The corresponding results generated from the full long-read WGS datasets are pro
 | `report/` | Interactive HTML summary of the test workflow results |
 | `summary/` | Combined assembly results and paired-contiguous assembly summary |
 
-## Test Results
-
 These outputs demonstrate successful execution of the same assembly, evaluation, reconstruction, comparison, and reporting steps used for the full workflow.
 
 Only assembly runs in which **both hap1 and hap2 were classified as contiguous** are included in the final reconstructed FASTA and assembly-reference difference outputs.
