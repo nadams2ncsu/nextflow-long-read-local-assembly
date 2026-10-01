@@ -1,18 +1,18 @@
 #!/usr/bin/env nextflow
 
 /*
-===============================================================================
+########################################################################
  Nextflow Long-Read Local Assembly
-===============================================================================
+########################################################################
 */
 
 nextflow.enable.dsl = 2
 
 
 /*
-===============================================================================
+####################################
  Import process modules
-===============================================================================
+####################################
 */
 
 include { VALIDATE_INPUTS }	from './modules/validate_inputs'
@@ -38,9 +38,9 @@ include { COMPARE_GROUP_DIFFERENCES } 	from './modules/compare_group_differences
 include { GENERATE_REPORT }	from './modules/generate_report'
 
 /*
-===============================================================================
+####################################
  Parameters
-===============================================================================
+####################################
 */
 
 params.samples = null
@@ -51,7 +51,7 @@ params.outdir = 'results'
 params.hifiasm_args = ''
 params.minimap2_preset = 'asm5'
 params.minimap2_args = ''
-params.group_similarity_threshold = 95.0
+params.group_similarity_threshold = 90.0
 
 params.default_flanks = [
     50,
@@ -65,9 +65,9 @@ params.default_flanks = [
 
 
 /*
-===============================================================================
+####################################
  Parameter validation
-===============================================================================
+####################################
 */
 
 if (!params.samples) {
@@ -80,11 +80,12 @@ if (!params.reference) {
 
 
 /*
-===============================================================================
+####################################
  Helper functions
-===============================================================================
+####################################
 */
 
+// Parse flanking region values in samples.tsv file
 def parseFlanks(String flankString) {
     if (!flankString) {
         error "FLANKS value cannot be empty."
@@ -111,7 +112,7 @@ def parseFlanks(String flankString) {
     }
 }
 
-
+// converts 1000 region to 1Mb;
 def getRunName(Integer flankKb) {
     if (flankKb == 1000) {
         return '1Mb'
@@ -119,7 +120,7 @@ def getRunName(Integer flankKb) {
     return "${flankKb}kb"
 }
 
-
+// parsing user-supplied coordintes
 def parseCoordinates(String coordinates) {
     def matcher =
         coordinates =~ /^([^:]+):(\d+)-(\d+)$/
@@ -156,7 +157,7 @@ def parseCoordinates(String coordinates) {
     ]
 }
 
-
+// calculate total regoin including flanks
 def calculateRegion(
     String coordinates,
     Integer flankKb
@@ -194,11 +195,12 @@ def calculateRegion(
 
 
 /*
-===============================================================================
+####################################
  Input channels
-===============================================================================
+####################################
 */
 
+// reference genome
 reference_ch = Channel
     .fromPath(
         params.reference,
@@ -206,6 +208,7 @@ reference_ch = Channel
     )
     .first()
 
+// reference genome index
 reference_fai_ch = Channel
     .fromPath(
         "${params.reference}.fai",
@@ -213,6 +216,7 @@ reference_fai_ch = Channel
     )
     .first()
 
+// samples from samples.tsv
 samples_ch = Channel
     .fromPath(
         params.samples,
@@ -238,12 +242,12 @@ samples_file_ch = Channel
     .first()
 
 /*
-===============================================================================
+########################################################################
  Validate sample rows
 
  Validation occurs before branching so both QC and assembly receive
  validated input.
-===============================================================================
+########################################################################
 */
 
 validated_samples_ch = samples_ch.map { row ->
@@ -430,13 +434,13 @@ validated_samples_ch = samples_ch.map { row ->
 
 
 /*
-===============================================================================
+########################################################################
  Branch samples
 
- QC: One job per original samples.tsv row.
-
+ coverage QC: One job per original samples.tsv row.
+ read statistics QC: calculate read stats once per sample
  Assembly: Each sample is subsequently expanded across requested flank sizes.
-===============================================================================
+#################################################################################
 */
 
 sample_branches = validated_samples_ch.multiMap { row ->
@@ -447,13 +451,13 @@ sample_branches = validated_samples_ch.multiMap { row ->
 }
 
 /*
-===============================================================================
+##########################################################
  Coverage QC input
 
  QC occurs before flank expansion.
 
  Therefore: one samples.tsv row = one COVERAGE_QC job
-===============================================================================
+##########################################################
 */
 
 qc_input_ch = sample_branches.qc.map { row ->
@@ -491,9 +495,9 @@ qc_input_ch = sample_branches.qc.map { row ->
 }
 
 /*
-===============================================================================
+#############################
  READ STATISTICS INPUT
-===============================================================================
+#############################
 */
 
 read_stats_input_ch = sample_branches.read_stats.map { row ->
@@ -517,9 +521,9 @@ read_stats_input_ch = sample_branches.read_stats.map { row ->
 }
 
 /*
-===============================================================================
+#############################
  Expand assembly samples across flank sizes
-===============================================================================
+#############################################
 */
 
 sample_flank_ch = sample_branches.assembly
@@ -589,9 +593,9 @@ sample_flank_ch = sample_branches.assembly
 
 
 /*
-===============================================================================
- Main workflow
-===============================================================================
+################################################################################
+Main long-read local assembly workflow
+################################################################################
 */
 
 workflow {
