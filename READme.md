@@ -8,7 +8,7 @@ The workflow performs regional read extraction, phased assembly, reference-based
 
 ## Goal
 
-Provide a reproducible and configurable workflow for localized assembly and characterization of structurally complex genomic regions from long-read WGS data. The human **FCGR2/3** locus is included as a test case.
+Provide a reproducible and configurable workflow for local assembly and characterization of structurally complex genomic regions from long-read WGS data. The human **FCGR2/3** locus is included as a test case.
 
 ---
 
