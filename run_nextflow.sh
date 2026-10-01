@@ -5,7 +5,6 @@ set -euo pipefail
 ##########################################################################################
 # Run Nextflow long-read local assembly workflow on an HPC compute node
 
-
 ############################################
 # Tools
 
@@ -69,7 +68,6 @@ echo
 CMD=(
 
     nextflow run main.nf
-    -resume
     -c nextflow.config
     --samples "$SAMPLES"
     --reference "$REFERENCE"
