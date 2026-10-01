@@ -274,13 +274,3 @@ Final sequence reconstruction requires both phased assemblies for a `sample + gr
 If either haplotype fails this requirement, neither haplotype from that assembly run is retained as a final reconstructed assembly.
 
 Samples represented by only one group can still produce final reconstructed sequences. Multiple groups are required only for across-group comparison.
-
----
-
-## Citation
-
-If you use this workflow in your research or project, please consider citing:
-
-> Adams, Nicole. (2026). *Nextflow Long-Read Local Assembly*. GitHub repository.
-
-https://github.com/nadams2ncsu/nextflow-long-read-local-assembly
