@@ -1,0 +1,541 @@
+#chrom	start	end	difference_type	haplotype	notes	reference_sequence	assembly_sequence
+chr1	161507237	161507238	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161508086	161508087	insertion	hap2	Haplotype-specific difference	-	AA
+chr1	161508086	161508088	deletion	hap1	Haplotype-specific difference	AA	-
+chr1	161508960	161508961	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161509019	161509020	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161509068	161509069	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161509341	161509342	deletion	hap2	Haplotype-specific difference	T	-
+chr1	161509341	161509343	deletion	hap1	Haplotype-specific difference	TT	-
+chr1	161509954	161509955	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161511245	161511246	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161511770	161511771	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161512729	161512730	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161513143	161513144	SNV	hap1	Haplotype-specific difference	C	G
+chr1	161514257	161514258	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161514333	161514334	SNV	hap1	Haplotype-specific difference	A	C
+chr1	161514384	161514385	SNV	hap1	Haplotype-specific difference	G	T
+chr1	161514510	161514511	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161514773	161514774	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161514845	161514846	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161516824	161516825	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161518618	161518619	insertion	hap1	Same genomic position in hap1 and hap2 but different sequence	-	T
+chr1	161518618	161518619	insertion	hap2	Same genomic position in hap1 and hap2 but different sequence	-	TT
+chr1	161518796	161518797	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161519562	161519563	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161520679	161520680	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161521105	161521106	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161521501	161521502	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	TATA
+chr1	161521687	161521688	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161522123	161522124	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161522657	161522658	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161522796	161522797	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161522853	161522854	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161523416	161523417	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161523514	161523515	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161523754	161523755	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161523789	161523790	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161524101	161524102	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161524336	161524337	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161524520	161524521	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161525686	161525687	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161526094	161526095	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161526739	161526740	SNV	hap1	Haplotype-specific difference	C	G
+chr1	161527109	161527110	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161527586	161527587	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161527630	161527631	SNV	hap1	Haplotype-specific difference	C	A
+chr1	161527754	161527755	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161527755	161527756	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161527794	161527795	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161528164	161528165	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161528171	161528172	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161528193	161528194	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161528211	161528212	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161528241	161528242	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161528254	161528255	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161528278	161528279	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161528336	161528337	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161528511	161528512	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161528557	161528558	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161528560	161528561	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161528561	161528562	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161528580	161528581	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161528951	161528952	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161528961	161528962	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161529059	161529060	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161529238	161529239	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	A	-
+chr1	161529564	161529565	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	T
+chr1	161529832	161529833	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	A
+chr1	161529926	161529927	insertion	hap1	Haplotype-specific difference	-	A
+chr1	161530573	161530574	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161531826	161531827	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	A	-
+chr1	161532113	161532114	SNV	hap1	Haplotype-specific difference	A	T
+chr1	161534254	161534255	deletion	hap1	Haplotype-specific difference	C	-
+chr1	161534769	161534770	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161535067	161535068	SNV	hap2	Haplotype-specific difference	A	T
+chr1	161535802	161535803	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161535809	161535810	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161536234	161536235	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161536810	161536811	insertion	hap1	Haplotype-specific difference	-	TTATAATTTCTTACACCTGTCTTTACTGCAATCTCTGAACATAAATTGTGAAGATTTCATGGACATTTATCGCTTCCCCAATCAATACTC
+chr1	161537654	161537655	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161538389	161538390	SNV	hap1	Haplotype-specific difference	T	G
+chr1	161538512	161538513	deletion	hap1	Haplotype-specific difference	A	-
+chr1	161538512	161538515	deletion	hap2	Haplotype-specific difference	AAA	-
+chr1	161539249	161539250	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161539364	161539365	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161540236	161540237	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161541183	161541184	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161541302	161541303	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161543586	161543587	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161543657	161543658	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161545385	161545386	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161546161	161546162	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161548381	161548382	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161549620	161549621	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161551289	161551290	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161554262	161554263	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161555842	161555843	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161557097	161557098	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161558045	161558046	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161558502	161558503	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161558525	161558526	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	A	-
+chr1	161559680	161559681	SNV	hap1	Haplotype-specific difference	C	A
+chr1	161559863	161559864	deletion	hap1	Haplotype-specific difference	T	-
+chr1	161560611	161560612	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161560984	161560985	SNV	hap1	Haplotype-specific difference	A	C
+chr1	161561204	161561205	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161561804	161561805	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161561827	161561828	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161562418	161562419	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161564037	161564038	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161564706	161564707	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161564826	161564827	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161565218	161565219	SNV	hap2	Haplotype-specific difference	T	G
+chr1	161565593	161565594	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161565906	161565907	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	T
+chr1	161566340	161566341	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161567800	161567801	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161568055	161568056	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161568716	161568717	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161568895	161568896	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161568957	161568958	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161569200	161569201	SNV	hap1	Haplotype-specific difference	G	C
+chr1	161569235	161569236	SNV	hap2	Haplotype-specific difference	A	T
+chr1	161569306	161569307	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161569853	161569854	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161570057	161570058	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161570110	161570111	insertion	hap2	Haplotype-specific difference	-	AAATAAAATA
+chr1	161570158	161570162	deletion	hap2	Haplotype-specific difference	TATT	-
+chr1	161570203	161570204	insertion	hap2	Haplotype-specific difference	-	GTGTGT
+chr1	161570203	161570209	deletion	hap1	Haplotype-specific difference	GTGTGT	-
+chr1	161570278	161570279	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161570287	161570288	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161570341	161570342	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161570450	161570451	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161570462	161570463	SNV	hap2	Haplotype-specific difference	C	A
+chr1	161570503	161570504	insertion	hap2	Haplotype-specific difference	-	T
+chr1	161570544	161570545	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161570546	161570547	SNV	hap2	Haplotype-specific difference	T	A
+chr1	161570556	161570557	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161570590	161570591	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161570609	161570610	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161570693	161570694	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161570861	161570862	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161570872	161570873	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161570898	161570899	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161570907	161570908	SNV	hap2	Haplotype-specific difference	A	C
+chr1	161570912	161570913	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161571056	161571057	SNV	hap2	Haplotype-specific difference	C	A
+chr1	161571058	161571059	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161571065	161571066	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161571069	161571070	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161571195	161571196	SNV	hap2	Haplotype-specific difference	C	G
+chr1	161571214	161571215	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161571221	161571222	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161571222	161571223	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161571244	161571246	deletion	hap2	Haplotype-specific difference	AT	-
+chr1	161571387	161571388	SNV	hap2	Haplotype-specific difference	C	G
+chr1	161571398	161571399	SNV	hap2	Haplotype-specific difference	C	A
+chr1	161571415	161571416	SNV	hap2	Haplotype-specific difference	A	C
+chr1	161571416	161571417	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161571420	161571421	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161571428	161571429	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161571738	161571739	SNV	hap2	Haplotype-specific difference	A	T
+chr1	161572194	161572195	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161572292	161572293	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161572306	161572307	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161572411	161572412	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161572441	161572442	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161572473	161572474	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161572510	161572511	SNV	hap2	Haplotype-specific difference	T	A
+chr1	161572516	161572517	SNV	hap2	Haplotype-specific difference	T	G
+chr1	161572518	161572520	deletion	hap2	Haplotype-specific difference	TG	-
+chr1	161572522	161572523	SNV	hap2	Haplotype-specific difference	G	T
+chr1	161572580	161572587	deletion	hap2	Haplotype-specific difference	CTCTGCT	-
+chr1	161572604	161572605	SNV	hap2	Haplotype-specific difference	A	C
+chr1	161572608	161572609	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161572961	161572962	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161572991	161572992	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161573066	161573067	deletion	hap2	Haplotype-specific difference	G	-
+chr1	161573377	161573378	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161574121	161574122	SNV	hap2	Haplotype-specific difference	T	A
+chr1	161574221	161574222	SNV	hap2	Haplotype-specific difference	T	G
+chr1	161574303	161574304	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161574400	161574401	SNV	hap2	Haplotype-specific difference	A	T
+chr1	161574401	161574402	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161575034	161575035	SNV	hap2	Haplotype-specific difference	T	A
+chr1	161576646	161576647	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161577048	161577049	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161577610	161577611	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161577751	161577752	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161577878	161577879	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161578600	161578601	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161579069	161579076	deletion	hap2	Haplotype-specific difference	AAAAAAG	-
+chr1	161579075	161579076	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161579123	161579124	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161579327	161579359	deletion	hap1	Haplotype-specific difference	AACAAAGAAAGAAAGAAAGAAAGAAAGAAAGA	-
+chr1	161579330	161579338	deletion	hap2	Haplotype-specific difference	AAAGAAAG	-
+chr1	161579385	161579386	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161579389	161579433	deletion	hap1	Haplotype-specific difference	GAAGGAAAAAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAAGAAA	-
+chr1	161579398	161579414	deletion	hap2	Haplotype-specific difference	AAAGAAAGAAAGAAAG	-
+chr1	161579455	161579456	SNV	hap1	Haplotype-specific difference	C	A
+chr1	161579456	161579460	deletion	hap2	Haplotype-specific difference	AGAA	-
+chr1	161579466	161579467	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161579470	161579471	SNV	hap1	Haplotype-specific difference	A	C
+chr1	161579490	161579491	insertion	hap1	Haplotype-specific difference	-	AGAA
+chr1	161579569	161579570	SNV	hap1	Haplotype-specific difference	A	G
+chr1	161579823	161579824	SNV	hap1	Haplotype-specific difference	G	C
+chr1	161580284	161580285	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161580544	161580545	SNV	hap1	Haplotype-specific difference	C	G
+chr1	161581984	161581985	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161581997	161581998	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161582474	161582475	SNV	hap1	Haplotype-specific difference	G	T
+chr1	161582594	161582595	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161583191	161583192	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161583350	161583351	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161583422	161583423	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161583574	161583575	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161584250	161584251	insertion	hap2	Haplotype-specific difference	-	TT
+chr1	161585580	161585581	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161585670	161585671	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161585695	161585696	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161585813	161585814	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161586036	161586037	SNV	hap2	Haplotype-specific difference	A	C
+chr1	161586638	161586639	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161586935	161586936	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161587160	161587161	insertion	hap2	Haplotype-specific difference	-	AC
+chr1	161587721	161587722	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161588934	161588935	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161589288	161589289	insertion	hap1	Haplotype-specific difference	-	T
+chr1	161589291	161589292	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161589536	161589537	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161589993	161589994	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161590102	161590103	SNV	hap2	Haplotype-specific difference	C	G
+chr1	161590563	161590564	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161591360	161591361	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161591445	161591446	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161591496	161591497	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161591943	161591944	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161592267	161592268	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161592612	161592613	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161593248	161593249	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161594228	161594229	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161594258	161594259	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161594302	161594303	SNV	hap1	Haplotype-specific difference	A	T
+chr1	161594311	161594312	SNV	hap1	Haplotype-specific difference	C	T
+chr1	161594317	161594318	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161594362	161594363	SNV	hap1	Haplotype-specific difference	C	G
+chr1	161594466	161594467	SNV	hap1	Haplotype-specific difference	G	A
+chr1	161595239	161595240	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161595533	161595534	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161595617	161595618	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161595688	161595689	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161595813	161595814	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161595914	161595915	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161595971	161595972	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161595985	161595986	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161596167	161596168	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161596502	161596503	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161596730	161596731	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161596766	161596767	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161596965	161596966	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161596966	161596967	SNV	hap2	Haplotype-specific difference	C	G
+chr1	161597283	161597284	deletion	hap2	Haplotype-specific difference	T	-
+chr1	161597398	161597399	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161597403	161597404	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161597536	161597537	insertion	hap2	Haplotype-specific difference	-	ATA
+chr1	161598136	161598137	SNV	hap2	Haplotype-specific difference	T	G
+chr1	161598609	161598611	deletion	hap2	Haplotype-specific difference	AG	-
+chr1	161599071	161599072	SNV	hap1	Haplotype-specific difference	A	T
+chr1	161599237	161599238	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161599357	161599358	SNV	hap2	Haplotype-specific difference	A	T
+chr1	161599407	161599408	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161599628	161599629	SNV	hap2	Haplotype-specific difference	C	G
+chr1	161600024	161600025	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161600102	161600103	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161600160	161600161	SNV	hap2	Haplotype-specific difference	C	A
+chr1	161600316	161600317	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161600412	161600413	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161600566	161600567	SNV	hap2	Haplotype-specific difference	C	T
+chr1	161600750	161600751	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161600870	161600871	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161600872	161600873	SNV	hap2	Haplotype-specific difference	T	A
+chr1	161600889	161600890	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161600941	161600942	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161601012	161601013	SNV	hap2	Haplotype-specific difference	A	C
+chr1	161601512	161601513	SNV	hap2	Haplotype-specific difference	A	G
+chr1	161601958	161601959	SNV	hap2	Haplotype-specific difference	T	G
+chr1	161602562	161602563	SNV	hap1	Haplotype-specific difference	T	C
+chr1	161602808	161602809	SNV	hap2	Haplotype-specific difference	G	A
+chr1	161602969	161602970	SNV	hap2	Haplotype-specific difference	G	C
+chr1	161603504	161603505	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161603731	161603732	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161604499	161604500	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161604514	161604515	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161604757	161604758	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161604863	161604864	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161604949	161604950	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161604955	161604956	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161605358	161605359	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161605656	161605657	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161605953	161605954	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161605977	161605978	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161606053	161606054	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161606436	161606437	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161607866	161607867	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161607878	161607879	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161609144	161609145	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161609293	161609294	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161609323	161609327	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	TGTC	-
+chr1	161609330	161609331	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161609352	161609353	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161610423	161610424	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	A
+chr1	161611179	161611180	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161611368	161611369	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161611444	161611445	insertion	hap1	Same genomic position in hap1 and hap2 but different sequence	-	AAAAA
+chr1	161611444	161611445	insertion	hap2	Same genomic position in hap1 and hap2 but different sequence	-	AAAAAA
+chr1	161611531	161611532	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	A
+chr1	161611723	161611724	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161612012	161612013	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161612426	161612427	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161612688	161612689	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161613272	161613273	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	C	-
+chr1	161613273	161613274	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161613316	161613317	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161613653	161613654	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161613945	161613946	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161614098	161614099	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161614179	161614180	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161614251	161614252	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161614281	161614282	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161614284	161614285	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161614399	161614400	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161614566	161614567	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161614574	161614575	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161614774	161614775	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161614810	161614811	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161614814	161614815	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161615005	161615006	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	TAAATAAATAAATAAAT
+chr1	161615008	161615009	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161615028	161615029	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161615506	161615507	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161615615	161615616	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161615665	161615666	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161615856	161615857	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161615958	161615959	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161616057	161616058	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161616236	161616237	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161616586	161616587	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161617503	161617504	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161617515	161617516	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161617516	161617517	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161617859	161617860	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161617860	161617861	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161618030	161618031	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161618289	161618290	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161618306	161618307	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161618466	161618467	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161618876	161618877	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161619366	161619367	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161619557	161619558	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161619861	161619862	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161619863	161619864	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161619935	161619936	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	A	-
+chr1	161621210	161621211	SNV	hap2	Haplotype-specific difference	T	C
+chr1	161621267	161621268	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161621352	161621353	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161621757	161621758	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161622003	161622004	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161622435	161622436	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161622606	161622607	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161623060	161623061	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161623117	161623118	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161623168	161623169	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161623558	161623559	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161623606	161623607	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161623677	161623678	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161623760	161623761	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161623780	161623781	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161624090	161624091	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	C
+chr1	161624167	161624168	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161624171	161624172	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161624309	161624310	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161624435	161624436	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161624455	161624456	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161624734	161624735	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161624735	161624736	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161624767	161624768	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161624970	161624971	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161625206	161625207	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161625289	161625290	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161625411	161625412	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161625471	161625472	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	G	-
+chr1	161625475	161625476	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161625939	161625940	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161626492	161626493	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161626913	161626914	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161628030	161628031	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161628196	161628197	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161628340	161628341	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161628487	161628488	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161628621	161628622	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161629187	161629188	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161629196	161629197	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161629201	161629202	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161629333	161629334	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161629377	161629378	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161629409	161629410	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161629568	161629569	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	T
+chr1	161629902	161629903	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161630184	161630185	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161630497	161630498	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161630554	161630555	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161630669	161630670	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161630678	161630679	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161630686	161630687	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161630800	161630801	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161630801	161630802	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161630864	161630865	deletion	hap2	Haplotype-specific difference	C	-
+chr1	161630996	161630997	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161631041	161631042	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161631306	161631307	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161631342	161631343	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161631967	161631968	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161632492	161632493	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161632508	161632509	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161633190	161633191	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161635416	161635417	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	CAGAATCTC
+chr1	161636798	161636799	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161637564	161637565	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161638348	161638349	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161638410	161638411	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161638423	161638424	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161638465	161638466	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161638526	161638527	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161638532	161638533	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161639028	161639029	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161639331	161639332	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161639460	161639461	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161639609	161639610	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161639616	161639617	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161639625	161639626	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161639678	161639679	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161639852	161639853	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161640135	161640136	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161640404	161640405	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	A
+chr1	161640748	161640749	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161640750	161640751	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161640751	161640752	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161640943	161640944	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161641028	161641029	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161641374	161641375	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161641479	161641480	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161641667	161641668	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161641776	161641777	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161641956	161641957	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161642438	161642439	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161642549	161642550	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161642619	161642620	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161642685	161642686	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161642875	161642876	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161644591	161644592	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161644610	161644611	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161644699	161644700	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161646670	161646671	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161647297	161647298	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161649249	161649250	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	T	-
+chr1	161649250	161649251	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161650111	161650112	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161650237	161650238	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161650247	161650248	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161650254	161650255	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	C
+chr1	161650282	161650283	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161650286	161650287	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	A	-
+chr1	161650315	161650316	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161650450	161650451	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161650458	161650459	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	G
+chr1	161650463	161650464	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161650474	161650475	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161650717	161650718	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161651066	161651067	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	A
+chr1	161651941	161651946	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	AAATA	-
+chr1	161652045	161652051	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	GTGTGT	-
+chr1	161652439	161652440	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161654368	161654371	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	TTG	-
+chr1	161656762	161656763	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161658897	161658898	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161660123	161660124	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161660719	161660720	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161660899	161660900	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	AAAAAA
+chr1	161661078	161661079	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	AAAGT
+chr1	161661155	161661156	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	AACAAAGAAAGAAAGA
+chr1	161661185	161661186	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161661192	161661193	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161661197	161661198	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161661251	161661252	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161661259	161661267	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	AAGGAAGG	-
+chr1	161661270	161661271	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161661290	161661294	deletion	hap1,hap2	Shared identical difference in hap1 and hap2	AGAA	-
+chr1	161661373	161661374	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161661374	161661375	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161661382	161661383	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161661798	161661799	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161662088	161662089	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161663736	161663737	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161664398	161664399	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161665154	161665155	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161665405	161665406	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161665512	161665513	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161665677	161665678	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161665898	161665899	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161665903	161665904	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161666054	161666055	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	T
+chr1	161666917	161666918	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161667384	161667385	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161667401	161667402	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161667499	161667500	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161668739	161668740	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161668817	161668818	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161669438	161669439	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161669659	161669660	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161669673	161669674	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161669768	161669769	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161673478	161673479	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161674007	161674008	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161674098	161674099	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161674516	161674517	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	T
+chr1	161674517	161674518	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
+chr1	161674596	161674597	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	T
+chr1	161674872	161674873	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161675164	161675165	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161675219	161675220	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	A
+chr1	161675468	161675469	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	G
+chr1	161675618	161675619	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161675680	161675681	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	C
+chr1	161676086	161676087	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161676321	161676322	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	C	T
+chr1	161676325	161676326	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161676329	161676330	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	T	C
+chr1	161676330	161676331	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	G	A
+chr1	161676710	161676711	insertion	hap1,hap2	Shared identical difference in hap1 and hap2	-	C
+chr1	161677742	161677743	SNV	hap1,hap2	Shared identical difference in hap1 and hap2	A	G
