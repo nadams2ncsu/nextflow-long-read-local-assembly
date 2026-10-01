@@ -92,7 +92,7 @@ MIN_MEDIAN_READ_LENGTH="5000"
 GROUP_SIMILARITY_THRESHOLD="90.0"
 
 # Maximum number of Nextflow tasks submitted to SLURM
-QUEUE_SIZE="18"
+QUEUE_SIZE="10"
 
 # Output
 OUTDIR="results"
