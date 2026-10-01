@@ -1,0 +1,389 @@
+###############################################################################
+# 1: Rust builder
+#
+# Compile the custom gfa2fasta utility.
+
+Bootstrap: docker
+From: rust:1.90-bookworm
+Stage: rust_builder
+
+
+%files
+    /Users/nicoleadams/Desktop/nextflow_container/nf_build/rust/gfa2fasta /opt/gfa2fasta
+
+
+%post
+    set -eux
+
+    echo "============================================================"
+    echo "1: Building Rust gfa2fasta utility"
+    echo "============================================================"
+
+    cd /opt/gfa2fasta
+
+    # Confirm required Rust project files exist.
+    test -f Cargo.toml
+    test -f src/main.rs
+
+    # Compile optimized release binary.
+    cargo build --release
+
+    # Confirm executable was generated.
+    test -x /opt/gfa2fasta/target/release/gfa2fasta
+
+    # Verify executable.
+    /opt/gfa2fasta/target/release/gfa2fasta --version
+
+    echo "Rust build completed successfully."
+
+
+###############################################################################
+# STAGE 2: Bioinformatics software builder
+#
+# Install/compile: samtools 1.22.1, hifiasm 0.25.0, minimap2 2.30
+#
+
+Bootstrap: docker
+From: ubuntu:24.04
+Stage: bio_builder
+
+
+%post
+    set -eux
+
+    export DEBIAN_FRONTEND=noninteractive
+
+    echo "============================================================"
+    echo "2: Installing build dependencies"
+    echo "============================================================"
+
+    apt-get update
+
+    apt-get install -y --no-install-recommends \
+        build-essential \
+        autoconf \
+        automake \
+        make \
+        gcc \
+        g++ \
+        git \
+        wget \
+        ca-certificates \
+        zlib1g-dev \
+        libbz2-dev \
+        liblzma-dev \
+        libcurl4-openssl-dev \
+        libssl-dev \
+        libncurses-dev
+
+    rm -rf /var/lib/apt/lists/*
+
+
+    ###########################################################################
+    # samtools 1.22.1
+
+    echo "============================================================"
+    echo "Installing samtools 1.22.1"
+    echo "============================================================"
+
+    mkdir -p /opt/build
+    cd /opt/build
+
+    wget \
+        --no-verbose \
+        https://github.com/samtools/samtools/releases/download/1.22.1/samtools-1.22.1.tar.bz2
+
+    tar -xjf samtools-1.22.1.tar.bz2
+    cd samtools-1.22.1
+
+    ./configure \
+        --prefix=/opt/software/samtools
+
+    #make -j"$(nproc)"
+    make -j2
+
+    make install
+    test -x /opt/software/samtools/bin/samtools
+    /opt/software/samtools/bin/samtools --version | head -n 1
+
+
+    ###########################################################################
+    # hifiasm 0.25.0
+
+    echo "============================================================"
+    echo " Installing hifiasm 0.25.0"
+    echo "============================================================"
+
+    cd /opt/build
+
+    git clone \
+        --branch 0.25.0 \
+        --depth 1 \
+        https://github.com/chhylp123/hifiasm.git
+
+    cd hifiasm
+
+    #make -j"$(nproc)"
+    make -j2
+    mkdir -p /opt/software/hifiasm/bin
+
+    install \
+        -m 0755 \
+        hifiasm \
+        /opt/software/hifiasm/bin/hifiasm
+
+    test -x /opt/software/hifiasm/bin/hifiasm
+    /opt/software/hifiasm/bin/hifiasm --version
+
+
+    ###########################################################################
+    # minimap2 2.30
+
+    echo "============================================================"
+    echo "Installing minimap2 2.30"
+    echo "============================================================"
+
+    cd /opt/build
+
+    wget \
+        --no-verbose \
+        https://github.com/lh3/minimap2/releases/download/v2.30/minimap2-2.30.tar.bz2
+
+    tar -xjf minimap2-2.30.tar.bz2
+    cd minimap2-2.30
+    #make -j"$(nproc)"
+    make -j2
+    mkdir -p /opt/software/minimap2/bin
+
+    install \
+        -m 0755 \
+        minimap2 \
+        /opt/software/minimap2/bin/minimap2
+
+    test -x /opt/software/minimap2/bin/minimap2
+    /opt/software/minimap2/bin/minimap2 --version
+
+
+    ###########################################################################
+    # Builder cleanup
+
+    echo "============================================================"
+    echo "Cleaning bioinformatics build stage"
+    echo "============================================================"
+
+    rm -rf /opt/build
+    echo "Bioinformatics software build completed successfully."
+
+
+###############################################################################
+# 3: Final runtime image
+#
+# Contains: samtools, hifiasm, minimap2. gfa2fasta, python3 
+#			(numpy, pandas, pysam,pyyaml)
+
+Bootstrap: docker
+From: ubuntu:24.04
+Stage: final
+
+
+%labels
+    Author Nicole Adams
+    Description "Runtime container for Nextflow localized long-read genome assembly and haplotype analysis workflow"
+    Version "0.2.0"
+    Samtools_Version "1.22.1"
+    Hifiasm_Version "0.25.0"
+    Minimap2_Version "2.30"
+    Rust_gfa2fasta_Version "0.1.0"
+
+
+###############################################################################
+# Copy compiled software from builder stages
+
+%files from rust_builder
+    /opt/gfa2fasta/target/release/gfa2fasta /usr/local/bin/gfa2fasta
+
+
+%files from bio_builder
+    /opt/software/samtools/bin/samtools /usr/local/bin/samtools
+    /opt/software/hifiasm/bin/hifiasm /usr/local/bin/hifiasm
+    /opt/software/minimap2/bin/minimap2 /usr/local/bin/minimap2
+
+
+###############################################################################
+# Install runtime dependencies and Python analysis environment
+
+%post
+    set -eux
+    export DEBIAN_FRONTEND=noninteractive
+
+    echo "============================================================"
+    echo "STAGE 3: Installing runtime dependencies"
+    echo "============================================================"
+
+    apt-get update
+
+    apt-get install -y --no-install-recommends \
+        ca-certificates \
+        zlib1g \
+        libbz2-1.0 \
+        liblzma5 \
+        libcurl4t64 \
+        libssl3t64 \
+        libncurses6 \
+        libtinfo6 \
+        python3 \
+        python3-pip \
+        python3-venv
+
+    ###########################################################################
+    # Create isolated Python environment
+
+    echo "============================================================"
+    echo "Creating Python virtual environment"
+    echo "============================================================"
+
+    python3 -m venv /opt/venv
+
+    /opt/venv/bin/python -m pip install \
+        --upgrade \
+        pip \
+        setuptools \
+        wheel
+
+
+    ###########################################################################
+    # Install Python analysis packages
+    #
+    # numpy, pandas, pysam, && PyYAML
+
+    echo "============================================================"
+    echo "Installing Python analysis packages"
+    echo "============================================================"
+
+    /opt/venv/bin/python -m pip install \
+        "numpy==2.3.3" \
+        "pandas==2.3.2" \
+        "pysam==0.23.3" \
+        "PyYAML==6.0.2" \
+	"plotly==6.3.0"
+
+
+    ###########################################################################
+    # Clean package metadata
+
+    echo "============================================================"
+    echo "Cleaning package metadata"
+    echo "============================================================"
+
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+
+    ###########################################################################
+    # Ensure executables have appropriate permissions
+
+    chmod 0755 \
+        /usr/local/bin/samtools \
+        /usr/local/bin/hifiasm \
+        /usr/local/bin/minimap2 \
+        /usr/local/bin/gfa2fasta
+
+
+    ###########################################################################
+    # Verify compiled/runtime executables
+
+    echo "============================================================"
+    echo "Verifying installed software"
+    echo "============================================================"
+
+    samtools --version | head -n 1
+    hifiasm --version
+    minimap2 --version
+    /opt/venv/bin/python --version
+    gfa2fasta --version
+
+
+    ###########################################################################
+    # Verify Python packages
+
+    echo "============================================================"
+    echo "Verifying Python analysis environment"
+    echo "============================================================"
+
+    /opt/venv/bin/python -c \
+        "import numpy; print('numpy', numpy.__version__)"
+
+    /opt/venv/bin/python -c \
+        "import pandas; print('pandas', pandas.__version__)"
+
+    /opt/venv/bin/python -c \
+        "import pysam; print('pysam', pysam.__version__)"
+
+    /opt/venv/bin/python -c \
+        "import yaml; print('PyYAML', yaml.__version__)"
+
+    /opt/venv/bin/python -c \
+    	"import plotly; print('plotly', plotly.__version__)"
+
+    echo "Runtime software verification completed successfully."
+
+##############################
+# Runtime environment
+
+%environment
+
+    export PATH=/opt/venv/bin:/usr/local/bin:$PATH
+    export VIRTUAL_ENV=/opt/venv
+    export PYTHONUNBUFFERED=1
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+
+
+%runscript
+
+    exec "$@"
+
+###################
+# Container tests
+
+%test
+    set -e
+
+    echo "============================================================"
+    echo "Testing Nextflow long-read assembly container"
+    echo "============================================================"
+
+    echo ""
+    echo "samtools:"
+    samtools --version | head -n 1
+
+    echo ""
+    echo "hifiasm:"
+    hifiasm --version
+
+    echo ""
+    echo "minimap2:"
+    minimap2 --version
+
+    echo ""
+    echo "Python:"
+    python3 --version
+
+    echo ""
+    echo "gfa2fasta:"
+    gfa2fasta --version
+
+    echo ""
+    echo "Python analysis packages:"
+    python3 -c \
+        "import numpy, pandas, pysam, yaml, plotly; \
+         print('numpy:', numpy.__version__); \
+         print('pandas:', pandas.__version__); \
+         print('pysam:', pysam.__version__); \
+         print('PyYAML:', yaml.__version__); \
+	 print('plotly:', plotly.__version__)"
+
+    echo ""
+    echo "============================================================"
+    echo "All required tools and Python packages are available."
+    echo "Container test PASSED."
+    echo "============================================================"

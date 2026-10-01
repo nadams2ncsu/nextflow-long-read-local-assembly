@@ -1,0 +1,31 @@
+sample	group	region	reference_build	genome_depth	genome_qc	gene	interval_count	coordinates	interval_depths	summed_gene_depth	normalized_depth	gene_qc
+HG00171	HGSVC	FCGR2_3	T2T	0.048	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:160768053-160781181	39.447	39.447	818.805	PASS
+HG00171	HGSVC	FCGR2_3	T2T	0.048	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:160804422-160813217	43.963	43.963	912.526	PASS
+HG00171	HGSVC	FCGR2_3	T2T	0.048	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	2	chr1:160843886-160862793;chr1:160925677-160944582	26.009;14.344	40.353	837.602	WARNING: gene interval coverage <=20x; low coverage may reflect a deletion or insufficient input data for reliable assembly.
+HG00171	HGSVC	FCGR2_3	T2T	0.048	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	2	chr1:160885753-160894524;chr1:160967541-160976307	0.000;38.286	38.286	794.708	WARNING: gene interval coverage <=20x; low coverage may reflect a deletion or insufficient input data for reliable assembly.
+HG00171	HGSVC	FCGR2_3	T2T	0.048	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161007516-161022983	41.798	41.798	867.596	PASS
+HG00171	LRS	FCGR2_3	GRCh38	0.044	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:161505457-161519829	39.758	39.758	908.609	PASS
+HG00171	LRS	FCGR2_3	GRCh38	0.044	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:161541759-161549818	34.665	34.665	792.203	PASS
+HG00171	LRS	FCGR2_3	GRCh38	0.044	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	1	chr1:161581340-161599803	36.043	36.043	823.707	PASS
+HG00171	LRS	FCGR2_3	GRCh38	0.044	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	1	chr1:161623196-161631176	34.467	34.467	787.692	PASS
+HG00171	LRS	FCGR2_3	GRCh38	0.044	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161663143-161678654	30.511	30.511	697.273	PASS
+HG00513	HGSVC	FCGR2_3	T2T	0.057	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:160768053-160781181	41.311	41.311	724.938	PASS
+HG00513	HGSVC	FCGR2_3	T2T	0.057	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:160804422-160813217	72.942	72.942	1280.019	PASS
+HG00513	HGSVC	FCGR2_3	T2T	0.057	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	2	chr1:160843886-160862793;chr1:160925677-160944582	33.992;20.865	54.857	962.65	PASS
+HG00513	HGSVC	FCGR2_3	T2T	0.057	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	2	chr1:160885753-160894524;chr1:160967541-160976307	30.838;7.107	37.945	665.872	WARNING: gene interval coverage <=20x; low coverage may reflect a deletion or insufficient input data for reliable assembly.
+HG00513	HGSVC	FCGR2_3	T2T	0.057	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161007516-161022983	37.362	37.362	655.641	PASS
+HG00513	LRS	FCGR2_3	GRCh38	0.058	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:161505457-161519829	40.287	40.287	690.167	PASS
+HG00513	LRS	FCGR2_3	GRCh38	0.058	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:161541759-161549818	54.447	54.447	932.746	PASS
+HG00513	LRS	FCGR2_3	GRCh38	0.058	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	1	chr1:161581340-161599803	55.256	55.256	946.6	PASS
+HG00513	LRS	FCGR2_3	GRCh38	0.058	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	1	chr1:161623196-161631176	42.362	42.362	725.713	PASS
+HG00513	LRS	FCGR2_3	GRCh38	0.058	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161663143-161678654	52.973	52.973	907.494	PASS
+HG03370	LRS	FCGR2_3	GRCh38	0.06	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:161505457-161519829	45.169	45.169	748.384	PASS
+HG03370	LRS	FCGR2_3	GRCh38	0.06	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:161541759-161549818	38.061	38.061	630.607	PASS
+HG03370	LRS	FCGR2_3	GRCh38	0.06	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	1	chr1:161581340-161599803	39.183	39.183	649.207	PASS
+HG03370	LRS	FCGR2_3	GRCh38	0.06	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	1	chr1:161623196-161631176	44.913	44.913	744.146	PASS
+HG03370	LRS	FCGR2_3	GRCh38	0.06	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161663143-161678654	41.135	41.135	681.545	PASS
+HG03583	LRS	FCGR2_3	GRCh38	0.076	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2A	1	chr1:161505457-161519829	61.288	61.288	802.417	PASS
+HG03583	LRS	FCGR2_3	GRCh38	0.076	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3A	1	chr1:161541759-161549818	58.21	58.21	762.125	PASS
+HG03583	LRS	FCGR2_3	GRCh38	0.076	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2C	1	chr1:161581340-161599803	45.89	45.89	600.822	PASS
+HG03583	LRS	FCGR2_3	GRCh38	0.076	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR3B	1	chr1:161623196-161631176	38.607	38.607	505.465	PASS
+HG03583	LRS	FCGR2_3	GRCh38	0.076	WARNING: whole-genome coverage <=20x; input coverage may be too low for reliable assembly.	FCGR2B	1	chr1:161663143-161678654	59.438	59.438	778.198	PASS

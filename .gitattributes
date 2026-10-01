@@ -1,0 +1,5 @@
+test/data/*.bam filter=lfs diff=lfs merge=lfs -text
+test/data/*.bai filter=lfs diff=lfs merge=lfs -text
+test/reference/*.fasta filter=lfs diff=lfs merge=lfs -text
+test/reference/*.fai filter=lfs diff=lfs merge=lfs -text
+*.sif filter=lfs diff=lfs merge=lfs -text

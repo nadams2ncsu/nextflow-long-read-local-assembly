@@ -1,0 +1,7 @@
+sample	group	bam	gene	coordinates	data_type	flanks	qc_config	haplotype_config
+HG00171	HGSVC	data/HGSVC_HG00171.bam	FCGR2_3	chr1:160765704-161024509	PB	400	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml
+HG00171	LRS	data/LRS_HG00171.bam	FCGR2_3	chr1:161505457-161678654	ONT	all	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml
+HG00513	LRS	data/LRS_HG00513.bam	FCGR2_3	chr1:161505457-161678654	ONT	400	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml
+HG00513	HGSVC	data/HGSVC_HG00513.bam	FCGR2_3	chr1:160765704-161024509	PB	400,1000	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml
+HG03583	LRS	data/LRS_HG03583.bam	FCGR2_3	chr1:161505457-161678654	ONT	100,400	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml
+HG03370	LRS	data/LRS_HG03370.bam	FCGR2_3	chr1:161505457-161678654	ONT	400	config/qc/human_FCGR2_3.yaml	/rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/haplotypes/human_FCGR2_3.yaml

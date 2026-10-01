@@ -1,0 +1,41 @@
+region: FCGR2_3
+evaluation_coordinates: chr1:161505457-161678654
+
+defaults:
+  large_indel_threshold: 40000
+  min_region_coverage: 0.89
+  breakpoint_tolerance: 5000
+  length_tolerance: 10000
+
+haplotypes:
+
+  H1:
+    structural_events: []
+
+  H2:
+    structural_events:
+      - type: deletion
+        region: chr1:161580692-161631487
+        length: 80000
+        count: 1
+
+  H3:
+    structural_events:
+      - type: deletion
+        region: chr1:161541534-161599722
+        length: 80000
+        count: 1
+
+  H4:
+    structural_events:
+      - type: insertion
+        region: chr1:161541397-161600133
+        length: 80000
+        count: 1
+
+  H5:
+    structural_events:
+      - type: insertion
+        region: chr1:161580966-161631624
+        length: 80000
+        count: 1

@@ -1,0 +1,877 @@
+Loading nextflow/25
+  Loading requirement: java/17
+
+Nextflow controller
+-------------------
+SLURM job:                  1003406
+Running on:                 c205n03
+
+Samples:                    /rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/samples.tsv
+Reference:                  /rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/reference/GRCh38_chr1.fasta
+
+Hifiasm arguments:          workflow defaults (-t --hg-size -o)
+Minimap2 arguments:         workflow defaults (-ax asm5 --eqx --secondary=no)
+Large INDEL threshold:      40000
+Min region coverage:        0.80
+Min median read length:     5000
+Group similarity threshold: 90.0
+Nextflow queue size:        18
+Output directory:           results
+
+Running:
+ nextflow run main.nf -resume -c nextflow.config --samples /rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/config/samples.tsv --reference /rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test/reference/GRCh38_chr1.fasta --large_indel_threshold 40000 --min_region_coverage 0.80 --min_median_read_length 5000 --group_similarity_threshold 90.0 --queue_size 18 --outdir results
+
+
+ N E X T F L O W   ~  version 25.10.3
+
+Launching `main.nf` [stupefied_engelbart] DSL2 - revision: b878205706
+
+[-        ] VALIDATE_INPUTS -
+[-        ] COVERAGE_QC     -
+[-        ] COMBINE_QC      -
+
+[-        ] VALIDATE_INPUTS    -
+[-        ] COVERAGE_QC        -
+[-        ] COMBINE_QC         -
+[-        ] READ_STATS         -
+[-        ] COMBINE_READ_STATS -
+[-        ] EXTRACT_READS      -
+[-        ] BAM2FASTQ          -
+[-        ] HIFIASM            -
+[-        ] GFA2FASTA          -
+[-        ] ALIGN_CONTIGS      -
+[-        ] SORT_INDEX         -
+
+[-        ] VALIDATE_INPUTS         -
+[-        ] COVERAGE_QC             -
+[-        ] COMBINE_QC              -
+[-        ] READ_STATS              -
+[-        ] COMBINE_READ_STATS      -
+[-        ] EXTRACT_READS           -
+[-        ] BAM2FASTQ               -
+[-        ] HIFIASM                 -
+[-        ] GFA2FASTA               -
+[-        ] ALIGN_CONTIGS           -
+[-        ] SORT_INDEX              -
+[-        ] SUMMARIZE               -
+[-        ] SELECT_CONTIGUOUS_PAIRS -
+[-        ] RECONSTRUCT_SEQUENCE    -
+
+[-        ] VALIDATE_INPUTS            -
+[-        ] COVERAGE_QC                -
+[-        ] COMBINE_QC                 -
+[-        ] READ_STATS                 -
+[-        ] COMBINE_READ_STATS         -
+[-        ] EXTRACT_READS              -
+[-        ] BAM2FASTQ                  -
+[-        ] HIFIASM                    -
+[-        ] GFA2FASTA                  -
+[-        ] ALIGN_CONTIGS              -
+[-        ] SORT_INDEX                 -
+[-        ] SUMMARIZE                  -
+[-        ] SELECT_CONTIGUOUS_PAIRS    -
+[-        ] RECONSTRUCT_SEQUENCE       -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES  -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES -
+[-        ] COMPARE_GROUP_DIFFERENCES  -
+
+[-        ] VALIDATE_INPUTS            -
+[-        ] COVERAGE_QC                -
+[-        ] COMBINE_QC                 -
+[-        ] READ_STATS                 -
+[-        ] COMBINE_READ_STATS         -
+[-        ] EXTRACT_READS              -
+[-        ] BAM2FASTQ                  -
+[-        ] HIFIASM                    -
+[-        ] GFA2FASTA                  -
+[-        ] ALIGN_CONTIGS              -
+[-        ] SORT_INDEX                 -
+[-        ] SUMMARIZE                  -
+[-        ] SELECT_CONTIGUOUS_PAIRS    -
+[-        ] RECONSTRUCT_SEQUENCE       -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES  -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES -
+[-        ] COMPARE_GROUP_DIFFERENCES  -
+[-        ] ACROSS_GROUPS_COMPARISON   -
+[-        ] CLASSIFY_HAPLOTYPE         -
+[-        ] COMBINE_RESULTS            -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[-        ] COVERAGE_QC                    -
+[-        ] COMBINE_QC                     -
+[-        ] READ_STATS                     -
+[-        ] COMBINE_READ_STATS             -
+[-        ] EXTRACT_READS                  -
+[-        ] BAM2FASTQ                      -
+[-        ] HIFIASM                        -
+[-        ] GFA2FASTA                      -
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[9b/bf4c9b] COV…HGSVC | HG00171 | FCGR2_3) | 2 of 2, cached: 2
+[-        ] COMBINE_QC                     -
+[6f/73b880] REA… (LRS | HG00171 | FCGR2_3) | 2 of 2, cached: 2
+[-        ] COMBINE_READ_STATS             -
+[11/d5ed4a] EXT…HG00171 | FCGR2_3 | 100kb) | 3 of 3, cached: 3
+[a2/d68b30] BAM…HG00171 | FCGR2_3 | 400kb) | 1 of 1, cached: 1
+[-        ] HIFIASM                        -
+[-        ] GFA2FASTA                      -
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[6c/eead5d] COV… (LRS | HG03583 | FCGR2_3) | 4 of 4, cached: 4
+[-        ] COMBINE_QC                     -
+[28/50d83b] REA…HGSVC | HG00513 | FCGR2_3) | 4 of 4, cached: 4
+[-        ] COMBINE_READ_STATS             -
+[11/d5ed4a] EXT…HG00171 | FCGR2_3 | 100kb) | 3 of 3, cached: 3
+[f2/1733ea] BAM…(HG00171 | FCGR2_3 | 50kb) | 2 of 2, cached: 2
+[-        ] HIFIASM                        -
+[-        ] GFA2FASTA                      -
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[c7/4b5f56] COV…HGSVC | HG00513 | FCGR2_3) | 5 of 5, cached: 5
+[-        ] COMBINE_QC                     -
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[-        ] COMBINE_READ_STATS             -
+[64/4604ab] EXT…HG00171 | FCGR2_3 | 400kb) | 6 of 6, cached: 6
+[0d/eabf9d] BAM…HG00171 | FCGR2_3 | 200kb) | 4 of 4, cached: 4
+[-        ] HIFIASM                        -
+[-        ] GFA2FASTA                      -
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[-        ] COMBINE_QC                     -
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1
+[fd/f7ea5e] EXT… (HG00171 | FCGR2_3 | 1Mb) | 8 of 8, cached: 8
+[f4/7fb174] BAM…HG00171 | FCGR2_3 | 300kb) | 6 of 6, cached: 6
+[ca/6732fa] HIF…1 | FCGR2_3 | 200kb | ONT) | 4 of 4, cached: 4
+[-        ] GFA2FASTA                      -
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1
+[1e/80fbe5] EXT…HG00513 | FCGR2_3 | 400kb) | 10 of 10, cached: 10
+[4b/931ce5] BAM…HG00171 | FCGR2_3 | 500kb) | 8 of 8, cached: 8
+[a9/a98f2b] HIF…1 | FCGR2_3 | 400kb | ONT) | 5 of 5, cached: 5
+[88/df908f] GFA…(HG00171 | FCGR2_3 | 50kb) | 2 of 2, cached: 2
+[-        ] ALIGN_CONTIGS                  -
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[34/dde732] EXT… (HG00513 | FCGR2_3 | 1Mb) | 11 of 11, cached: 11
+[a9/271f97] BAM… (HG00513 | FCGR2_3 | 1Mb) | 11 of 11, cached: 11
+[ea/3f8528] HIF…1 | FCGR2_3 | 500kb | ONT) | 8 of 8, cached: 8
+[1e/d55246] GFA…HG00171 | FCGR2_3 | 200kb) | 4 of 4, cached: 4
+[2b/54a67a] ALI… | FCGR2_3 | 400kb | hap1) | 2 of 2, cached: 2
+[-        ] SORT_INDEX                     -
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[b5/9bb1bb] EXT…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12
+[a9/271f97] BAM… (HG00513 | FCGR2_3 | 1Mb) | 11 of 11, cached: 11
+[fe/f8c8fb] HIF…13 | FCGR2_3 | 400kb | PB) | 9 of 9, cached: 9
+[f9/ea36c6] GFA…HG00171 | FCGR2_3 | 300kb) | 5 of 5, cached: 5
+[90/2c9f3c] ALI… | FCGR2_3 | 100kb | hap2) | 4 of 4, cached: 4
+[83/7d247a] SOR… | FCGR2_3 | 400kb | hap1) | 2 of 2, cached: 2
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[33/2bef01] BAM…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12
+[c7/d72e2d] HIF…0513 | FCGR2_3 | 1Mb | PB) | 11 of 11, cached: 11
+[de/f0902c] GFA… (HG00171 | FCGR2_3 | 1Mb) | 7 of 7, cached: 7
+[90/7645d5] ALI… | FCGR2_3 | 100kb | hap1) | 6 of 6, cached: 6
+[83/7d247a] SOR… | FCGR2_3 | 400kb | hap1) | 2 of 2, cached: 2
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[41/12b73e] BAM…HG03370 | FCGR2_3 | 400kb) | 13 of 13, cached: 13
+[4e/cf50b5] HIF…0 | FCGR2_3 | 400kb | ONT) | 12 of 12, cached: 12
+[aa/0f59a4] GFA…HG00513 | FCGR2_3 | 400kb) | 9 of 9, cached: 9
+[90/7645d5] ALI… | FCGR2_3 | 100kb | hap1) | 6 of 6, cached: 6
+[01/6dde97] SOR…1 | FCGR2_3 | 50kb | hap2) | 4 of 4, cached: 4
+[-        ] SUMMARIZE                      -
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[-        ] CLASSIFY_HAPLOTYPE             -
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[fb/689e71] HIF…3 | FCGR2_3 | 400kb | ONT) | 13 of 13, cached: 13
+[90/72888a] GFA… (HG00513 | FCGR2_3 | 1Mb) | 10 of 10, cached: 10
+[fe/6e86d2] ALI… | FCGR2_3 | 200kb | hap2) | 9 of 9, cached: 9
+[97/07fcda] SOR…1 | FCGR2_3 | 50kb | hap1) | 6 of 6, cached: 6
+[e0/088452] SUM… | FCGR2_3 | 400kb | hap1) | 2 of 2, cached: 2
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[17/41bd19] CLA… | FCGR2_3 | 400kb | hap2) | 1 of 1, cached: 1
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[88/ffe971] GFA…HG03370 | FCGR2_3 | 400kb) | 12 of 12, cached: 12
+[f1/684e80] ALI… | FCGR2_3 | 400kb | hap2) | 12 of 12, cached: 12
+[4b/11dd22] SOR… | FCGR2_3 | 200kb | hap2) | 9 of 9, cached: 9
+[5d/8d8430] SUM…1 | FCGR2_3 | 50kb | hap1) | 6 of 6, cached: 6
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[f3/a21ecc] CLA…1 | FCGR2_3 | 50kb | hap2) | 3 of 3, cached: 3
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[f1/684e80] ALI… | FCGR2_3 | 400kb | hap2) | 12 of 12, cached: 12
+[4b/11dd22] SOR… | FCGR2_3 | 200kb | hap2) | 9 of 9, cached: 9
+[02/a59e0b] SUM… | FCGR2_3 | 200kb | hap1) | 8 of 8, cached: 8
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[ff/49eb33] CLA… | FCGR2_3 | 100kb | hap2) | 5 of 5, cached: 5
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[f3/90d14b] ALI… | FCGR2_3 | 400kb | hap2) | 15 of 15, cached: 15
+[82/59f62a] SOR… | FCGR2_3 | 400kb | hap1) | 11 of 11, cached: 11
+[81/dedaa2] SUM… | FCGR2_3 | 200kb | hap2) | 9 of 9, cached: 9
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[c1/aad2dc] CLA… | FCGR2_3 | 200kb | hap1) | 8 of 8, cached: 8
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[b9/7735d2] ALI… | FCGR2_3 | 500kb | hap2) | 17 of 17, cached: 17
+[22/22305d] SOR…71 | FCGR2_3 | 1Mb | hap1) | 13 of 13, cached: 13
+[19/38c080] SUM… | FCGR2_3 | 300kb | hap2) | 11 of 11, cached: 11
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[d0/61347f] CLA… | FCGR2_3 | 200kb | hap2) | 9 of 9, cached: 9
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[0d/f6933d] ALI… | FCGR2_3 | 400kb | hap1) | 18 of 18, cached: 18
+[55/fcc83c] SOR… | FCGR2_3 | 400kb | hap2) | 15 of 15, cached: 15
+[80/3ef8ac] SUM…71 | FCGR2_3 | 1Mb | hap1) | 12 of 12, cached: 12
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[22/8f48e1] CLA… | FCGR2_3 | 400kb | hap1) | 10 of 10, cached: 10
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[d1/8df6dc] ALI…13 | FCGR2_3 | 1Mb | hap1) | 21 of 21, cached: 21
+[68/34ef6e] SOR… | FCGR2_3 | 500kb | hap2) | 17 of 17, cached: 17
+[77/a14604] SUM…71 | FCGR2_3 | 1Mb | hap2) | 15 of 15, cached: 15
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[21/80082d] CLA… | FCGR2_3 | 400kb | hap2) | 13 of 13, cached: 13
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[c2/a76168] ALI… | FCGR2_3 | 400kb | hap1) | 23 of 23, cached: 23
+[ce/db6c1d] SOR… | FCGR2_3 | 400kb | hap1) | 18 of 18, cached: 18
+[92/5a66ae] SUM… | FCGR2_3 | 500kb | hap1) | 17 of 17, cached: 17
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[e9/a14618] CLA… | FCGR2_3 | 500kb | hap1) | 16 of 16, cached: 16
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[5a/2aa63e] ALI… | FCGR2_3 | 400kb | hap1) | 27 of 27, cached: 27
+[68/a50375] SOR…13 | FCGR2_3 | 1Mb | hap1) | 21 of 21, cached: 21
+[35/8519db] SUM…13 | FCGR2_3 | 1Mb | hap2) | 18 of 18, cached: 18
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[d7/ed7ec8] CLA…13 | FCGR2_3 | 1Mb | hap2) | 18 of 18, cached: 18
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[fa/84b131] SOR… | FCGR2_3 | 400kb | hap2) | 25 of 25, cached: 25
+[e1/945476] SUM…13 | FCGR2_3 | 1Mb | hap1) | 21 of 21, cached: 21
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[5a/60636f] CLA… | FCGR2_3 | 400kb | hap1) | 19 of 19, cached: 19
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[2e/50a21e] SUM… | FCGR2_3 | 400kb | hap1) | 24 of 24, cached: 24
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[4e/115fd7] CLA… | FCGR2_3 | 400kb | hap2) | 22 of 22, cached: 22
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[-        ] SELECT_CONTIGUOUS_PAIRS        -
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[-        ] COMBINE_RESULTS                -
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[-        ] RECONSTRUCT_SEQUENCE           -
+[-        ] NOTE_ASSEMBLY_DIFFERENCES      -
+[-        ] MERGE_ASSEMBLY_DIFFERENCES     -
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[-        ] ACROSS_GROUPS_COMPARISON       -
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[7e/dd1ec6] REC…| HGSVC | FCGR2_3 | 400kb) | 2 of 2, cached: 2
+[75/4e6abe] NOT…1 | FCGR2_3 | 50kb | hap1) | 4 of 4, cached: 4
+[75/e24d0e] MER… HG00171 | FCGR2_3 | 50kb) | 2 of 2, cached: 2
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[93/7f5ba7] REC…171 | LRS | FCGR2_3 | 1Mb) | 5 of 5, cached: 5
+[95/aa0712] NOT… | FCGR2_3 | 300kb | hap1) | 8 of 8, cached: 8
+[44/da7dff] MER…HG00171 | FCGR2_3 | 200kb) | 3 of 3, cached: 3
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[69/9b2eb0] REC…| HGSVC | FCGR2_3 | 400kb) | 7 of 7, cached: 7
+[54/071821] NOT…71 | FCGR2_3 | 1Mb | hap2) | 11 of 11, cached: 11
+[9e/c2c0e8] MER…HG00171 | FCGR2_3 | 300kb) | 4 of 4, cached: 4
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[87/8f9307] REC…3 | LRS | FCGR2_3 | 400kb) | 10 of 10, cached: 10
+[74/560cb2] NOT…13 | FCGR2_3 | 1Mb | hap1) | 16 of 16, cached: 16
+[a1/d53ac2] MER…| HG00171 | FCGR2_3 | 1Mb) | 6 of 6, cached: 6
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[a2/6620b1] NOT… | FCGR2_3 | 400kb | hap2) | 20 of 20, cached: 20
+[82/b27ca9] MER…| HG00513 | FCGR2_3 | 1Mb) | 9 of 9, cached: 9
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12
+[-        ] COMPARE_GROUP_DIFFERENCES      -
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+Plus 1 more processes waiting for tasks…
+
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[04/907ddc] COM…oup difference comparison) | 1 of 1, cached: 1 ✔
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+[-        ] GENERATE_REPORT                | 0 of 1
+
+executor >  slurm (1)
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[04/907ddc] COM…oup difference comparison) | 1 of 1, cached: 1 ✔
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+[f9/1d55e2] GEN…ORT (HTML workflow report) | 0 of 1
+
+executor >  slurm (1)
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[04/907ddc] COM…oup difference comparison) | 1 of 1, cached: 1 ✔
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+[f9/1d55e2] GEN…ORT (HTML workflow report) | 0 of 1
+
+executor >  slurm (1)
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[04/907ddc] COM…oup difference comparison) | 1 of 1, cached: 1 ✔
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+[f9/1d55e2] GEN…ORT (HTML workflow report) | 1 of 1 ✔
+
+executor >  slurm (1)
+[d2/70c2da] VAL…workflow input validation) | 1 of 1, cached: 1 ✔
+[4a/480b7d] COV… (LRS | HG03370 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[44/23732e] COM…E_QC (coverage QC summary) | 1 of 1, cached: 1 ✔
+[07/fd2aa4] REA… (LRS | HG03583 | FCGR2_3) | 6 of 6, cached: 6 ✔
+[84/a61a0b] COM… (combine read statistics) | 1 of 1, cached: 1 ✔
+[ff/91b6a5] EXT…HG03370 | FCGR2_3 | 400kb) | 14 of 14, cached: 14 ✔
+[c0/2db00d] BAM…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[79/974b84] HIF…3 | FCGR2_3 | 100kb | ONT) | 14 of 14, cached: 14 ✔
+[89/be782c] GFA…HG03583 | FCGR2_3 | 100kb) | 14 of 14, cached: 14 ✔
+[24/185efc] ALI… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[05/c49aac] SOR… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[66/088c4a] SUM… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[d7/4b1616] SEL…red-contiguous assemblies) | 1 of 1, cached: 1 ✔
+[cc/e11eba] REC…3 | LRS | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[d7/2c9117] NOT… | FCGR2_3 | 400kb | hap2) | 24 of 24, cached: 24 ✔
+[b0/5c70c0] MER…HG03583 | FCGR2_3 | 400kb) | 12 of 12, cached: 12 ✔
+[04/907ddc] COM…oup difference comparison) | 1 of 1, cached: 1 ✔
+[9a/6a510c] ACR… (across-group comparison) | 1 of 1, cached: 1 ✔
+[c0/02e3a3] CLA… | FCGR2_3 | 100kb | hap2) | 28 of 28, cached: 28 ✔
+[1e/b440c0] COM…NE_RESULTS (final summary) | 1 of 1, cached: 1 ✔
+[f9/1d55e2] GEN…ORT (HTML workflow report) | 1 of 1 ✔
+WARN: Failed to render execution report -- see the log file for details
+WARN: Failed to render execution timeline -- see the log file for details
+
+
+------------------------------------------------------------
+Resource usage summary:
+
+    Job ID            : 1003406
+    Job name          : local_asm_nf
+    User / Account    : nadams2 / penglab_cpu
+    Partition / QOS   : compute / normal
+    Submitted         : 2026-09-30T19:01:49
+    Started           : 2026-09-30T19:01:59
+    Wait time         : 10 sec
+    Elapsed (wall)    : 00:00:47
+    Nodes             : 1 (c205n03)
+    CPUs allocated    : 1
+    Tasks             : 1
+    CPU time (total)  : 32.33 sec  (user 31.02, sys 1.32)
+    CPU efficiency    : 68.8%
+    Memory in use     : 822.23 MB  (sampled at job end; see seff for peak)
+    Memory requested  : 4G
+    Working directory : /rsstu/users/x/xpeng5/FcyRGenetics/FcR_Haplotyping/scripts/abstract_anal/container_test/nf_build/test
+    Exit code         : 0:0
+
+    For final accounting (Slurm's MaxRSS, billing, etc.):  seff 1003406
+------------------------------------------------------------

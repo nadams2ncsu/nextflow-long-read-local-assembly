@@ -1,0 +1,62 @@
+region: FCGR2_3
+
+datasets:
+
+  LRS:
+    reference: GRCh38
+
+  HGSVC:
+    reference: T2T
+
+  HPRC:
+    reference: T2T
+
+
+references:
+
+  GRCh38:
+
+    FCGR2A:
+      coordinates:
+        - chr1:161505457-161519829
+
+    FCGR3A:
+      coordinates:
+        - chr1:161541759-161549818
+
+    FCGR2C:
+      coordinates:
+        - chr1:161581340-161599803
+
+    FCGR3B:
+      coordinates:
+        - chr1:161623196-161631176
+
+    FCGR2B:
+      coordinates:
+        - chr1:161663143-161678654
+
+
+  T2T:
+
+    FCGR2A:
+      coordinates:
+        - chr1:160768053-160781181
+
+    FCGR3A:
+      coordinates:
+        - chr1:160804422-160813217
+
+    FCGR2C:
+      coordinates:
+        - chr1:160843886-160862793
+        - chr1:160925677-160944582
+
+    FCGR3B:
+      coordinates:
+        - chr1:160885753-160894524
+        - chr1:160967541-160976307
+
+    FCGR2B:
+      coordinates:
+        - chr1:161007516-161022983

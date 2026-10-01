@@ -1,0 +1,14 @@
+[package]
+name = "gfa2fasta"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nicole Adams"]
+description = "Convert GFA assembly segment records to FASTA and calculate basic assembly statistics."
+license = "MIT"
+
+[[bin]]
+name = "gfa2fasta"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
