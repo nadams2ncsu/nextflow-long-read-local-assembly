@@ -81,10 +81,12 @@ For regions where structural haplotyping is not required, set `haplotype_config`
 
 ### 5. Run
 
-Make the submission scripts executable:
+Make submission scripts as well as process python scripts and modules executable:
 
 ```bash
 chmod +x submit_local_asm_workflow.sh run_nextflow.sh
+chmod +x bin/*
+chmod +x modules/*
 ```
 
 Submit the workflow:
