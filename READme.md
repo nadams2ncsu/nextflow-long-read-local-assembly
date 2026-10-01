@@ -138,9 +138,7 @@ Test-specific sample, QC, and haplotype configurations are provided in `test/con
 From the repository root:
 
 ```bash
-cd test
-chmod +x submit_local_asm_workflow.sh run_nextflow.sh
-./submit_local_asm_workflow.sh config/samples.tsv reference/GRCh38_chr1.fasta
+./submit_local_asm_workflow.sh test/config/samples.tsv test/reference/GRCh38_chr1.fasta
 ```
 
 The test dataset exercises the same assembly, evaluation, reconstruction, comparison, and reporting steps as the full workflow.
