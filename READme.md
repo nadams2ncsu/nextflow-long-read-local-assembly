@@ -36,7 +36,7 @@ Analysis dependencies are packaged in `long_read_local_asm.sif`.
 
 ---
 
-### Root Files
+### Core Workflow Files
 
 | File | Description |
 |---|---|
