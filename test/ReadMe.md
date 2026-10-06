@@ -21,6 +21,8 @@ From the repository root:
 
 The workflow uses the same Nextflow processes, container, QC procedures, assembly evaluation, and reporting steps as a full analysis.
 
+Direct paths to all input files, QC and haplotype yaml files need to be updated for each user in the `samples.tsv`.
+
 ## Test Data
 
 The reduced BAM files retain reads surrounding the FCGR2/3 region rather than complete genome-wide sequencing data. They are intended to provide a smaller dataset for evaluating workflow execution and representative outputs.
