@@ -6,7 +6,7 @@ The test data are the same long-read WGS samples used during workflow developmen
 
 ## Directory Structure
 - `config/` contains the sample configuration used for the test workflow.
-- `data/` contains reduced long-read BAM files and their indexes.
+- `data/` contains downsampled long-read BAM files and their indexes.
 - `reference/` contains chromosome 1 from the GRCh38 reference and its index.
 - `logs/` contains example workflow execution logs.
 - `test_results/` contains representative outputs from a completed test run.
@@ -21,11 +21,11 @@ From the repository root:
 
 The workflow uses the same Nextflow processes, container, QC procedures, assembly evaluation, and reporting steps as a full analysis.
 
-Direct paths to all input files, QC and haplotype yaml files need to be updated for each user in the `samples.tsv`.
+*Direct paths to all input files, QC and haplotype yaml files need to be updated for each user in the `samples.tsv`.*
 
 ## Test Data
 
-The reduced BAM files retain reads surrounding the FCGR2/3 region rather than complete genome-wide sequencing data. They are intended to provide a smaller dataset for evaluating workflow execution and representative outputs.
+The downsampled BAM files retain reads surrounding the FCGR2/3 region rather than complete genome-wide sequencing data. They are intended to provide a smaller dataset for evaluating workflow execution and representative outputs.
 
 Because these BAMs contain reads only around the target region, genome-wide coverage metrics are expected to be low and may trigger coverage QC warnings. These warnings are expected for the reduced test dataset.
 
